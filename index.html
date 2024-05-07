@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my_avatar.png" alt="Kyaw Monkey" width="80" style="border-radius: 10%;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kyaw Monkey">Kyaw 🐵</h1>
+
+          <p class="title">Senior iOS Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:kyaw.codes@gmail.com" class="contact-link">kyaw.codes@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+66991511541" class="contact-link">+66 99 151 1541</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+
+              <a href="https://www.linkedin.com/in/kyaw-monkey/" class="contact-link">kyaw-monkey</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Anusawari, Bang Khen, Bangkok 10220</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/kyaw-codes" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@kyaw-the-monkey" class="social-link">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/KyawTheMonkey" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://stackoverflow.com/users/12714553/kyawthemonkey" class="social-link">
+              <ion-icon name="logo-stackoverflow"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Apps</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Kyaw Zay Ya Lin Tun</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Kyaw is a passionate Senior iOS Developer with <b>4+ years of experience</b> in developing cutting-edge iOS apps 
+            for medium to large-scale enterprises in South East Asia. He has successfully launched <b>three indie iOS apps 
+            serving 10K+ users.</b> He run a Medium blog, and speak at several meet-ups, educating his fellows on iOS 
+            development, Swift and programming in general.
+          </p>
+          <p>
+            His expertise includes Swift and Objective-C, as well as a strong understanding of core iOS frameworks such as 
+            UIKit, SwiftUI, Core Data, Core Animation, Combine etc. He also mentor junior iOS developers through <a href="https://adplist.org/mentors/kyaw-zay-ya-lin-tun" style="color: #fafafa; text-decoration: underline; display: inline;">ADPList</a>, a platform facilitating one-on-one mentorship sessions. 
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/swift.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" style="text-transform: none;">iOS Developer</h4>
+
+                <p class="service-item-text">
+                  I am helping companies build iOS apps using industry best practices. One of the prominent clients I work with is <a href="https://www.codigo.co/work/resorts-world-sentosa" class="company_link">Resort World Sentosa</a>.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/mentor_icon.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming Mentor</h4>
+
+                <p class="service-item-text">
+                  This mentoring role underscores my commitment to 
+                  fostering talent and knowledge-sharing within the iOS development community.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/speaking.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Community Builder</h4>
+
+                <p class="service-item-text">
+                  I organize <a href="http://cocoaheads.org/" class="company_link">CocoaHeads</a> meet-ups in Myanmar and speak at events like <a href="https://gdg.community.dev/gdg-yangon/" class="company_link">GDG Yangon</a>, DevFest, and <a href="https://var.camp/" class="company_link">VarCamp</a>.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/blog.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Tech Blogger</h4>
+
+                <p class="service-item-text">
+                  I write articles focusing mainly on Swift, iOS development, UIKit, and computer science-related topics.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/sheilar_zune.png" alt="Sheilar Zune" width="60" style="border-radius: 20%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sheilar Zune</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: darkgray; padding-bottom: 12px;">Senior Mobile Consultant, <a href="https://www.thoughtworks.com/" class="company_link">Thoughtworks</a></p>
+                  <p>
+                    Having worked closely with Kyaw Zay Ya Lin Tun on iOS projects, his dedication and hard work are evident in every task he undertakes. His proactive approach to learning and willingness to collaborate make him an invaluable asset to any team. He focuses on getting things done while delivering high-quality results.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/michael_leonhard.png" alt="Michael Leonhard" width="60" style="border-radius: 20%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Michael Leonhard</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: darkgray; padding-bottom: 12px;">Senior Software Engineer, <a href="https://www.flexport.com/" class="company_link">Flexport</a></p>
+                  <p>
+                    Kyaw is very knowledgeable about iOS development. He answered my questions about UI testing and shared best-practices and links to tools and libraries. This will save me a lot of time.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/thu_hnin_aye.png" alt="Thu Hnin Aye" width="60" style="border-radius: 20%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Thu Hnin Aye Kyaw Soe</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: darkgray; padding-bottom: 12px;">Senior Automation Quality Assurance Engineer, <a href="https://www.amity.co/" class="company_link">Amity</a></p>
+                  <p>
+                    Kyaw is very knowledgeable about iOS development. He answered my questions about UI testing and shared best-practices and links to tools and libraries. This will save me a lot of time.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/lin_maung.png" alt="Lin Maung" width="60" style="border-radius: 20%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Lin Maung</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: darkgray; padding-bottom: 12px;">Senior Android Developer, <a href="https://www.linkedin.com/company/hellozigsg/" class="company_link">Zig - A ComfortDelGro Company</a></p>
+                  <p>
+                    He is very active during technical discussions and very creative when solving problems. He is always cheerful, so I personally enjoyed working together with him. He also has a large and warm personality, so he is still a close friend of mine.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/luigi_greco.png" alt="Luigi Greco" width="60" style="border-radius: 20%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Luigi Greco</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: darkgray; padding-bottom: 12px;">iOS Developer, <a href="https://www.linkedin.com/company/innovajlda/about/" class="company_link">INNOVAJ</a></p>
+                  <p>
+                    Kyaw is a great listener and will give you advice on how to better approach the community and learn from more experienced developers.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/aung_ko_ko.png" alt="Aung Ko" width="60" style="border-radius: 20%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Aung Ko Ko</h4>
+              
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: darkgray; padding-bottom: 12px;">iOS Developer, <a href="https://www.codigo.co/" class="company_link">Codigo</a></p>
+                  <p>
+                    He is one of the Best iOS Developers in South East Asia, and he's still at the age of 22 or sth, 
+                    and he's the best mentor as well.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/min_thet.png" alt="Min Thet" width="60" style="border-radius: 20%;" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Min Thet Maung</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p style="color: darkgray; padding-bottom: 12px;">iOS Developer, <a href="https://www.codigo.co/" class="company_link">Codigo</a></p>
+                  <p>
+                    Kyaw Zay Ya Lin Tun is an experienced iOS developer who has a deep understanding of iOS development 
+                    and is able to develop high-quality code that is efficient and scalable. One of the things I admire 
+                    most about Kyaw is his ability to work well with others. He is a supportive team player who is 
+                    always willing to lend a helping hand and share his knowledge with his colleagues. 
+                    In addition to his technical skills, Kyaw has excellent communication skills. He is able to 
+                    translate complex technical concepts into simple terms for non-technical stakeholders. He is a 
+                    natural problem-solver and is able to think creatively to come up with solutions to any challenges 
+                    that arise. He would be an asset to any organization. It is a pleasure to work with him.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/min_thet.png" alt="Aung Ko" width="80" style="border-radius: 20%;" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Aung Ko Ko</h4>
+                <!-- <time datetime="2023-05-14">14 May, 2023 | iOS Developer @Codigo</time> -->
+              <div data-modal-text>
+                <p></p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients" style="padding-top: 20px;">
+
+          <h3 class="h3 clients-title">Clients I've worked for</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://www.rwsentosa.com/en">
+                <img src="./assets/images/sentosa.png" alt="Resort World Sentosa">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.isetan.com.sg/">
+                <img src="./assets/images/isetan.png" alt="Isetan">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - Developer Life In Media
+        -->
+
+        <section class="blog-posts">
+          <h3 class="h3 clients-title" style="padding-bottom: 32px;">Developer Life In Media</h3>
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://bit.ly/csclub-podcast-e4-google-podcasts">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/cs_club_podcast.jpg" alt="CS Club Podcast" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Podcast</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">June 4, 2020</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Ep 4: Programmer's Journey</h3>
+
+                  <p class="blog-text">
+                    ကိုကျော်ဇေယျလင်းထွန်းရဲ့ Programmer's Journey မှာ တစ်နှစ် နှစ်နှစ်လောက်အတွင်း ဘယ်လိုတိုးတက်အောင် လုပ်ဆောင်ခဲ့ရတာတွေကို နားဆင်ရမှာပါ
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.facebook.com/photo/?fbid=477803764557267&set=a.111505004520480">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ciy_kyaw.jpeg" alt="CIY Talk Show" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Talk Show</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">January 14, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">4 years of Coding : Nothing Fancy!</h3>
+
+                  <p class="blog-text">
+                    Coding အကြောင်း အထာကျကျ လေ့ လာသိရှိခွင့်ရဖို့ ဘာကိုစောင့်နေတော့မှာလဲ ?
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+         <!--
+          - Skills
+        -->
+
+        <section class="skill" style="padding-top: 20px;">
+
+          <h3 class="h3 skills-title">Languages & Frameworks</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Swift</h5>
+                <data value="100">(Expert)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Objective-C</h5>
+                <data value="25">(Novice)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="75">(Proficient)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Kotlin</h5>
+                <data value="25">(Novice)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">UIKit</h5>
+                <data value="100">(Expert)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SwiftUI</h5>
+                <data value="75">(Proficient)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">RxSwift, Combine</h5>
+                <data value="75">(Proficient)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Core Data</h5>
+                <data value="50">(Competent)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Realm</h5>
+                <data value="75">(Proficient)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Core Animation</h5>
+                <data value="50">(Competent)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">URLSession, Alamofire</h5>
+                <data value="75">(Expert)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">XCTest Framework</h5>
+                <data value="50">(Competent)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Async-await</h5>
+                <data value="75">(Proficient)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CocoaPod</h5>
+                <data value="100">(Expert)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Swift Package Manager</h5>
+                <data value="100">(Expert)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Fastlane</h5>
+                <data value="25">(Novice)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Bitrise</h5>
+                <data value="50">(Competent)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">XcodeGen</h5>
+                <data value="25">(Novice)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tuist</h5>
+                <data value="25">(Novice)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SwiftGen</h5>
+                <data value="25">(Novice)</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior iOS Developer | <a href="https://www.codigo.co" class="company_link">Codigo</a></h4>
+
+              <span>Nov 2021 — Present</span>
+
+              <p class="timeline-text">
+                Worked with Singapore's leading enterprises to help them accelerate their business growth through high-performance mobile solutions. Led technical and architecture decisions, and developed fluid UIs and internal DSLs for the Codigo iOS projects. Assisted fellow developers with their professional growth.                
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">iOS Developer | CodeDock</h4>
+              <span>Mar 2020 — Oct 2021</span>
+              <p class="timeline-text">
+                Responsible for Ul development with UlKit (both storyboard and programmatic UI). Integrate backend API services with UI layer. Offline caching and schema migration using Realm
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Angular Web Developer | CodeDock</h4>
+              <span>Aug 2019 — Mar 2020</span>
+              <p class="timeline-text">
+                Developed single-page web applications. Use Firebase extensively as a backend. NgRx and RxJS for stateful UI development
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">B.Sc (Hons:) Computer Science | <a href="https://www.uy.edu.mm/" class="company_link">University of Yangon</a></h4>
+              <span>2017 — Unfinished</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Diploma in Web Development | <a href="https://www.yude.edu.mm/" class="company_link">Yangon University of Distance Education</a></h4>
+              <span>2018 — 2020</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://certificates.cs50.io/292f5c6f-fecd-4250-ae45-2744ba035dc1.pdf?size=letter" class="company_link">CS50: Introduction to Computer Science</a> | Harvard University</h4>
+              <span>Nov 2020</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title"><a href="https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/43926b22215c047920c7d4b72af85b45" class="company_link">Full Stack Open</a> | University of Helsinki</h4>
+              <span>Jul 2020</span>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                <a href="https://cert.efset.org/diUJdb" class="company_link">
+                  C2 Proficient in English
+                </a>
+                 | EF SET
+                </h4>
+              <span>May 2022</span>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="apps">
+
+        <header>
+          <h2 class="h2 article-title">Apps</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Commercial</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Indie</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Commercial</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Indie</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="commercial">
+              <a href="https://apps.apple.com/us/app/rws/id403904593">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rws.png" alt="rws" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Resort World Sentosa</h3>
+
+                <p class="project-category">Codigo</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="commercial">
+              <a href="https://apps.apple.com/us/app/isetan-privilege/id1116025361">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/isetan_ss.png" alt="isetan" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Isetan Privilege</h3>
+
+                <p class="project-category">Codigo</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="indie">
+              <a href="https://apps.apple.com/us/app/rohingya-keyboard/id1623030565">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rohingya_kb.png" alt="rohingya keyboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rohingya Keyboard</h3>
+
+                <p class="project-category">Indie</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="indie">
+              <a href="https://apps.apple.com/us/app/griddy/id6447456866">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/griddy.png" alt="griddy" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Griddy</h3>
+
+                <p class="project-category">Indie</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="indie">
+              <a href="https://apps.apple.com/us/app/phayarsar-buddhist-prayers/id6475991817">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/phayarsar.png" alt="PhayarSar - Buddhist Prayers" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PhayarSar - Buddhist Prayers</h3>
+
+                <p class="project-category">Indie</p>
+
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
